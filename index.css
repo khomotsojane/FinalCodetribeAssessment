@@ -1,0 +1,343 @@
+body {
+    font-family: 'Epilogue', sans-serif;
+    ;
+}
+
+body #nav {
+    min-width: 40%;
+}
+
+body #nav tr th a {
+    color: #222222;
+    text-decoration: none;
+}
+
+body #nav tr th .active {
+    color: rgb(100, 100, 100);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+body #nav tr th:first-child {
+    font-size: xx-large;
+    color: black;
+}
+
+body #nav tr th:last-child {
+    position: fixed;
+    min-width: 100%;
+}
+
+body #nav tr th button {
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    font-size: 15px;
+}
+
+body #nav tr th button:hover {
+    cursor: pointer;
+}
+
+body #nav tr th #btn-login {
+    border: none;
+    background-color: inherit;
+}
+
+body #nav tr th #btn-register {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: inherit;
+}
+
+#dropdown {
+    position: inherit;
+    display: inline-block;
+}
+
+#dropdown-content {
+    align-items: first baseline;
+    text-align: left;
+    display: none;
+    position: fixed;
+    margin-top: 20px;
+
+    background-color: white;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    height: 23%;
+    width: 10%;
+    border-radius: 10px;
+}
+
+#dropdown-content ul {
+    position: inherit;
+    list-style-type: none;
+    margin-left: -20px;
+    margin-top: 5px;
+}
+
+#dropdown-content ul li {
+    padding-top: 20px;
+    text-align: left;
+}
+
+
+#dropdown-content2 {
+    align-items: first baseline;
+    text-align: left;
+    display: none;
+    position: fixed;
+    margin-top: 40px;
+    margin-left: 50px;
+    background-color: white;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    height: 10%;
+    width: 8%;
+    border-radius: 10px;
+}
+
+#dropdown-content2 ul {
+    position: inherit;
+    list-style-type: none;
+    margin-left: -20px;
+    margin-top: 5px;
+}
+
+#dropdown-content2 ul li {
+    padding-top: 10px;
+    text-align: left;
+    text-decoration: none;
+}
+
+
+/* #nav tr th #dropdown:hover #dropdown-content {
+    display: block;
+} */
+
+#content {
+    position: fixed;
+    margin-top: 200px;
+    margin-left: 15%;
+    min-width: 100%;
+}
+
+#content #paragraph {
+    color: rgb(100, 100, 100);
+    font-size: xx-large;
+}
+
+#content #heading {
+    font-size: 500%;
+    font-weight: bold;
+}
+
+#content button {
+    background-color: inherit;
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+#content img {
+    position: fixed;
+    margin-left: 40%;
+    margin-top: -520px;
+    width: 500px;
+}
+
+#content ul {
+    list-style-type: none;
+}
+
+#content ul li {
+    float: left;
+    padding-top: 70px;
+    padding-right: 40px;
+}
+
+#content::after {
+    float: clear;
+}
+
+#android_nav {
+    display: none;
+}
+
+#nav_side {
+    display: none;
+}
+
+#android_content {
+    display: none;
+}
+
+@media screen and (max-width: 680px) {
+
+    #nav {
+        display: none;
+    }
+
+    #content {
+        display: none;
+    }
+
+    #android_nav {
+        display: block;
+    }
+
+    #android_nav ul {
+        list-style-type: none;
+    }
+
+    #android_nav ul li {
+        float: left;
+    }
+
+    #android_nav ul li:last-child {
+        float: right;
+    }
+
+    #android_nav ul li::after {
+        float: clear;
+    }
+
+    #android_content {
+        position: fixed;
+        display: block;
+        margin-top: 40px;
+        left: 0;
+        min-width: 100%;
+        text-align: center;
+    }
+
+    #android_content img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #android_content #heading {
+        text-align: center;
+        font-size: 250%;
+        font-weight: bolder;
+    }
+
+    #android_content #paragraph {
+        font-size: large;
+        color: rgb(100, 100, 100);
+        line-height: 30px;
+    }
+
+    #android_content a {
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        border: none;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    #nav_side {
+        display: none;
+        position: fixed;
+        min-width: 50%;
+        margin-left: 50%;
+        z-index: 10;
+        min-height: 100%;
+        background-color: white;
+    }
+
+    #nav_side #icon {
+        margin-left: 200px;
+        color: black;
+    }
+
+    #nav_side ul {
+        list-style-type: none;
+        color: rgb(100, 100, 100);
+    }
+
+    #nav_side ul li {
+        padding: 2%;
+    }
+    #nav_side button {
+        color: rgb(100, 100, 100);
+        background-color: inherit;
+        border: none;
+    }
+
+
+    #nav_side #android_login {
+        font-size: larger;
+        text-align: center;
+        margin-left: 45px;
+        padding-bottom: 20px;
+    }
+
+    #nav_side #android_register {
+        font-size: larger;
+        text-align: center;
+        border: 1px solid black;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        align-items: first baseline;
+        text-align: left;
+        display: none;
+        position: fixed;
+        margin-top: 0px;
+        line-height: 40px;
+        background-color: white;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        height: 21%;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    
+    .dropdown2 {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content2 {
+        align-items: first baseline;
+        text-align: left;
+        display: none;
+        position: fixed;
+        margin-top: 0px;
+        line-height: 40px;
+        background-color: white;
+        min-width: 100px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        height: 19%;
+        width: 100%;
+        border-radius: 10px;
+    }
+}
